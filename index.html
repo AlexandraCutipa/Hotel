@@ -4,22 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos.css">
     <title>Document</title>
 </head>
 <body>
-    <tr>
-        <td>
-        <label for="a">N°</label>
-        <input type="text" class="in" placeholder="001"></input>
+    <section id="seccion">
+        <div class="ds">
+            <label for="a">N°</label>
+            <input type="text" class="in" placeholder="001"></input>
 
-        <label for="a">Ubicación</label>
-        <input type="text" class="in"><br><br>
+            <label for="a">Ubicación</label>
+            <input type="text" class="in"><br><br>
 
-        <label for="a">Cliente</label>
-        <input type="text" class="in"></input>
+            <label for="a">Cliente</label>
+            <input type="text" class="in"></input>
 
-        <label for="a">DNI</label>
-        <input type="text" class="in"></input>
-        </td>
+            <label for="a">DNI</label>
+            <input type="text" class="in"></input>
+        </div><br><br>
+        <div class="ds">
+            <label for="a">Tipo</label>
+            <select name="as" id="sel">
+                <option value="0">---</option>
+                <option value="Simple">Simple</option>
+                <option value="Doble">Doble</option>
+                <option value="Matrimonial">Matrimonial</option>
+            </select>
+            <label for="a">N° Personas</label>
+            <input type="text" class="in"><br><br>
+            <button  type="reset" name="reset" class="boton">Reset</button>
+            <button type="submit" name="enviar" class="boton">Guardar</button>
+        </div>
+    </section>
+    <asid id="tabli">
+        <h1>Datos Cliente</h1>
+        <table class="tabla" border="0" style="width: 300px">
+            <tr>
+                <td></td><td>Nombre</td><td>DNI</td><td>Fecha</td><td>Ubicación</td>
+            </tr>
+        </table>
+        <table class="tabla" border="0" style="width: 300px">
+            <tr>
+                <td>#</td><td>Habitación</td><td>Costo</td><td>Calidad</td><td>Acción</td>
+            </tr>
+        </table>
+        <label for="a">Total: </label>
+        <input type="text" class="in">
+    </aside>
+    <script src="script.js"></script>   
 </body>
 </html>
